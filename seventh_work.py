@@ -4,7 +4,7 @@ number = random.randint(1, 10)
 attempt = 0
 while guess_number != number:
     if attempt == 5:
-        print("Вы не смогли отгадать число раньше, чем с третьего раза. Попробуйте ещё раз")
+        print(f"Вы не смогли отгадать число раньше, чем с третьего раза. Загаданое число: {number}. Попробуйте ещё раз")
         break
     guess_number = int(input("Введите число: "))
     if guess_number > number:
